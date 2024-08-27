@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+  <header>
+    <img src="./img/Logo (1).png" alt="logo alura latam" id="logo">
+  </header>
+  
+  
+    <section>
+        <div class="alerta-info">
+          <img class="imgInfo" src="./img/Group.png" alt="alerta importante">  
+          <label class="info" for="input-texto">Solo letras minúsculas, sin acentos</label>
+        </div>
+        <input class="texto-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí">
+        <div id="botones">
+          <input class="boton1" type="button" value="Encriptar" id="boton-encriptar">
+          <input class="boton2" type="button" value="Desencriptar" id="boton-desencriptar">
+        </div>
+
+    </section>
+    
+    <section id="cajaR">
+      <h2 id=""></h2>
+          
+      <div id="divImagen">
+        <picture>
+          <source srcset="./img/Muñeco.png" media="screen and (max-width : 400px)">
+          <img src="./img/Muñeco.png" alt="imagen muñeco buscando con lupa" id="imagen" class="img">
+        </picture>
+        <p class="texto1"><strong>Ningún mensaje fue encontrado</strong></p>
+        <p class="texto2">Ingrese el texto que deseas encriptar o desencriptar</p>
+      </div>
+      <div id="botonCopiar">
+        <input class="text-input-salida" type="text" id="msg">
+        <input class="boton3" type="button" value="Copiar" id="boton-copy">
+      </div>
+      
+    </section>
+      
+  <footer>
+    <p>por Andrés Díaz</p> 
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
